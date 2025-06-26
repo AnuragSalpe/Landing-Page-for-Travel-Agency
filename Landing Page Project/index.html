@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Salpe's Tours & Travels - Discover Your Next Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>Anurag Salpe's Tours & Travels</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="cta-button">Book Now</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="hero-mountain.jpg" alt="Mountain Adventure">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Discover Your Next <span class="highlight">Journey</span></h1>
+                <p>Embark on extraordinary journeys to breathtaking destinations around the world. From mountain peaks to tropical paradises, we make your travel dreams come true.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">160+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Tours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="search-form">
+                <h3>Find Your Perfect Trip</h3>
+                <form class="trip-search">
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" placeholder="Where do you want to go?">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkin">Check-in</label>
+                        <input type="date" id="checkin">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out</label>
+                        <input type="date" id="checkout">
+                    </div>
+                    <div class="form-group">
+                        <label for="travelers">Travelers</label>
+                        <select id="travelers">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                        Search Tours
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Destinations</h2>
+                <p>Explore our Most Popular travel destinations handpicked for unforgettable experiences</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="dest-tropical.jpg" alt="Tropical Paradise">
+                        <div class="card-overlay">
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tropical Paradise</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Maldives</p>
+                        <div class="card-details">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="price">From $1,299/<br>₹1,11325 Approx.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="dest-florence.jpg" alt="Florence">
+                        <div class="card-overlay">
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Renaissance Beauty</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Florence, Italy</p>
+                        <div class="card-details">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="price">From $899/<br>₹77,044 Approx.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="dest-barcelona.jpg" alt="Barcelona">
+                        <div class="card-overlay">
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Artistic Wonders</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Barcelona, Spain</p>
+                        <div class="card-details">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <div class="price">From $799/<br>₹68,474 Approx.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="dest-mediterranean.jpg" alt="Mediterranean Coast">
+                        <div class="card-overlay">
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Coastal Charm</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Mediterranean</p>
+                        <div class="card-details">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                            <div class="price">From $1,099/<br>₹94,184 Approx.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="luxury.escape.png" alt="Overwater Bungalows">
+                        <div class="card-overlay">
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Luxury Escape</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Jaipur,India</p>
+                        <div class="card-details">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <div class="price">From $2,499/<br>₹2,14164 Approx.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="hero-mountain.jpg" alt="Mountain Adventure">
+                        <div class="card-overlay">
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mountain Peaks</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Swiss Alps</p>
+                        <div class="card-details">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="price">From $1,599/<br>₹1,37034 Approx.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Anurag Salpe's Tours & Travels?</h2>
+                <p>We provide Exceptional travel Experiences with unmatched Service and Expertise</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Guides</h3>
+                    <p>Our Certified local guides provide Authentic insights and ensure your Safety throughout your Journey.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>We guarantee Competitive pricing with no hidden fees. Get the best value for your travels.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to assist you before, during, and after your travels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Types -->
+    <section class="adventure-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Adventure Types</h2>
+                <p>Choose your perfect journey style</p>
+            </div>
+            <div class="adventure-scroll">
+                <div class="adventure-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Mountain</h3>
+                    <p>Hiking & Climbing</p>
+                </div>
+                <div class="adventure-card">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>Beach</h3>
+                    <p>Tropical Getaways</p>
+                </div>
+                <div class="adventure-card">
+                    <i class="fas fa-city"></i>
+                    <h3>City</h3>
+                    <p>Urban Exploration</p>
+                </div>
+                <div class="adventure-card">
+                    <i class="fas fa-paw"></i>
+                    <h3>Safari</h3>
+                    <p>Wildlife Adventures</p>
+                </div>
+                <div class="adventure-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Cultural</h3>
+                    <p>Heritage Tours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from real adventurers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"An absolutely incredible experience! The guides were knowledgeable and the destinations were breathtaking. Highly recommend Anurag Salpe's Tours & Travels!"</p>
+                        <div class="testimonial-author">
+                            <strong>Aditya Sharma</strong>
+                            <span>Mountain Explorer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect organization and attention to detail. Every aspect of our tropical vacation was flawlessly planned. We'll definitely book again!"</p>
+                        <div class="testimonial-author">
+                            <strong>Michael Sanchez</strong>
+                            <span>Beach Lover</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The cultural tours exceeded our expectations. We learned so much about local traditions and made memories that will last a lifetime."</p>
+                        <div class="testimonial-author">
+                            <strong>Emily Rodriguez</strong>
+                            <span>Culture Enthusiast</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated for New Travels</h2>
+                    <p>Subscribe to our Newsletter and be the first to know about Exclusive Deals, New Destinations, and Travel tips.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain"></i>
+                        <span>Anurag Salpe's <br>Tours & Travels</span>
+                    </div>
+                    <p>Creating unforgettable travel experiences since 2016. Your journey starts here.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/anurag_salpe?igsh=Nng1NzVpcWJ2czJ0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Destinations</h3>
+                    <ul>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">North & South America</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Oceania</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 (9527532160)</p>
+                        <p><i class="fas fa-envelope"></i>info@anuragsalpe.toursandtravels.com</i></p>
+                        <p><i class="fas fa-map-marker-alt"></i> G-8, Sahas Hsg. Society, Chhatrapati Sambhajinagar,<br>Maharashtra, India  431009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anurag Salpe's Tours & Travels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
